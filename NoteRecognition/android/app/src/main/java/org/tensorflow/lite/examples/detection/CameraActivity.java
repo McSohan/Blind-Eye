@@ -178,38 +178,7 @@ public abstract class CameraActivity extends AppCompatActivity
     plusImageView.setOnClickListener(this);
     minusImageView.setOnClickListener(this);
 
-//    SensorManager mySensorManager = (SensorManager)this.getSystemService(Context.SENSOR_SERVICE);
-//    Sensor lightSensor = mySensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
-//    if(lightSensor != null){
-//      Log.d ("In Light Sensor Code", "Light Sensor");
-//      mySensorManager.registerListener(
-//              lightSensorListener,
-//              lightSensor,
-//              SensorManager.SENSOR_DELAY_NORMAL);
-//
-//    } else {
-//      Log.d("Light sensor", "Sensor.TYPE_LIGHT NOT Available");
-//    }
-
   }
-
-//  private final SensorEventListener lightSensorListener
-//          = new SensorEventListener(){
-//
-//    @Override
-//    public void onAccuracyChanged(Sensor sensor, int accuracy) {
-//      // TODO Auto-generated method stub
-//
-//    }
-//
-//    @Override
-//    public void onSensorChanged(SensorEvent event) {
-//      if(event.sensor.getType() == Sensor.TYPE_LIGHT){
-//        Log.d("Light Sensor", "LIGHT: " + event.values[0]);
-//        //here we get hold of the camera variable reference to the object
-//      }
-//    }
-//  };
 
   protected int[] getRgbBytes() {
     imageConverter.run();
